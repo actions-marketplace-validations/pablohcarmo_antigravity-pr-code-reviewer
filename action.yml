@@ -59,7 +59,7 @@ runs:
         PR_NUMBER: ${{ github.event.pull_request.number }}
       run: |
         if [ -z "$PR_NUMBER" ]; then
-          echo "::warning ::PR_NUMBER não identificado. O comentário não pôde ser publicado."
+          echo "::warning::PR_NUMBER não identificado. O comentário não pôde ser publicado."
           exit 0
         fi
 
