@@ -54,9 +54,15 @@ runs:
       if: success()
       shell: bash
       env:
+        GH_TOKEN: ${{ inputs.github_token }}
         GITHUB_TOKEN: ${{ inputs.github_token }}
         PR_NUMBER: ${{ github.event.pull_request.number }}
       run: |
+        if [ -z "$PR_NUMBER" ]; then
+          echo "::warning::PR_NUMBER não identificado. O comentário não pôde ser publicado."
+          exit 0
+        fi
+
         if [ -s review_output.md ]; then
           gh pr comment "$PR_NUMBER" --body-file review_output.md
         else
