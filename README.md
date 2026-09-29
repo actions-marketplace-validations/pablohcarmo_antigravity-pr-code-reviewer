@@ -1,5 +1,9 @@
 # 🤖 Antigravity PR Code Reviewer (GitHub Action)
 
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Antigravity%20PR%20Code%20Reviewer-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/antigravity-pr-code-reviewer)
+[![Release](https://img.shields.io/github/v/release/pablohcarmo/antigravity-pr-code-reviewer?style=flat-square&color=blue)](https://github.com/pablohcarmo/antigravity-pr-code-reviewer/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
 > Agente autônomo de Code Review para Pull Requests potencializado por **Google Antigravity** e **Gemini**, empacotado como uma **GitHub Action reutilizável**.
 
 Com esta Action, você **não precisa copiar scripts, instalar pacotes ou recriar o agente** em cada um dos seus repositórios. Basta adicionar um workflow mínimo de poucas linhas e qualquer Pull Request passará a ser revisado automaticamente por um agente com postura sênior, analisando segurança, performance, arquitetura e manutenibilidade.
