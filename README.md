@@ -64,16 +64,19 @@ O agente utiliza os modelos do Google Gemini. Para gerar a chave gratuita:
 3. Clique em **Criar chave de API** (*Create API key*).
 
 ![Tela de Chaves de API no Google AI Studio](images/api-keys.png)
+
 *Figura 1: Acessando a tela de Chaves de API no Google AI Studio.*
 
 4. Na janela **Criar uma nova chave**, informe um nome de identificação (ex: `Gemini API Key`), selecione o projeto do Google Cloud e clique em **Criar chave**.
 
 ![Modal de criação de chave](images/copy-api-key.png)
+
 *Figura 2: Definindo o nome da chave e o projeto associado.*
 
 5. Na tela seguinte de **Detalhes da chave de API**, clique em **Copiar chave** e salve-a.
 
 ![Copiando a chave de API gerada](images/details-api-key.png)
+
 *Figura 3: Janela com a chave de API pronta para ser copiada.*
 
 ---
@@ -98,7 +101,6 @@ Se os seus repositórios pertencem a uma Organização no GitHub, você só prec
 4. Valor: cole a chave da API.
 5. Clique em **Add secret**.
 
-<!-- ADICIONE SUA CAPTURA DE TELA ABAIXO -->
 ![Configuração de Repository Secret no GitHub](images/github-secret-config.png)
 *Figura 4: Adicionando o secret GEMINI_API_KEY nas configurações do GitHub.*
 
@@ -145,7 +147,6 @@ jobs:
 > [!IMPORTANT]
 > Certifique-se de que o repositório permite permissões de escrita para o workflow em **Settings > Actions > General > Workflow permissions** (**Read and write permissions**).
 
-<!-- ADICIONE SUA CAPTURA DE TELA ABAIXO -->
 ![Permissões do Workflow no GitHub Actions](images/github-workflow-permissions.png)
 *Figura 5: Configurando permissões de leitura e escrita para workflows no repositório.*
 

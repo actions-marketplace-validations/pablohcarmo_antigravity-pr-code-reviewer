@@ -54,6 +54,7 @@ runs:
       if: success()
       shell: bash
       env:
+        GH_TOKEN: ${{ inputs.github_token }}
         GITHUB_TOKEN: ${{ inputs.github_token }}
         PR_NUMBER: ${{ github.event.pull_request.number }}
       run: |
