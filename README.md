@@ -139,7 +139,7 @@ jobs:
           fetch-depth: 0
 
       - name: Executar Code Review com Antigravity
-        uses: pablohcarmo/antigravity-pr-code-reviewer@main
+        uses: pablohcarmo/antigravity-pr-code-reviewer@v1
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
 ```
@@ -162,7 +162,7 @@ Caso queira usar um arquivo com outro nome ou caminho, use o input `agents_file`
 
 ```yaml
       - name: Executar Code Review com Antigravity
-        uses: pablohcarmo/antigravity-pr-code-reviewer@main
+        uses: pablohcarmo/antigravity-pr-code-reviewer@v1
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
           agents_file: 'docs/CODE_REVIEW_RULES.md'
